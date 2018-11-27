@@ -1,6 +1,6 @@
 # Imaris Parser
 
-**A set of functions / notebooks to aggegrate csv exported data from Imaris**
+**A set of functions / notebooks to aggregate csv exported data from Imaris**
 
 ### Installation
 * Install Miniconda https://conda.io/docs/user-guide/install/index.html
