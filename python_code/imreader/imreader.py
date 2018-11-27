@@ -53,7 +53,7 @@ def parse_dirname(fname):
         if repnr == 2:
             repnr = 1
     res = {'date':date, 'infected':infected, 'cellid':cellid, 'repnr':repnr, 'ermarker':ermarker}
-    if date and infected and cellid and repnr and ermarker:
+    if date and (infected is not None) and cellid and repnr and ermarker:
         return res
     else:
         logr.error('Failed decodion {} \n {}'.format(fname, res))
