@@ -16,6 +16,7 @@ $conda install numpy jupyter
 
 ### Running
 ```
+$source activate imr
 $jupyter notebook # Opens your webbrowser on localhost:8888
 ```
 * Select Imaris_Reader.ipynb
