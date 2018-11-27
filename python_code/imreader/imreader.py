@@ -139,7 +139,7 @@ def outwriter(aggregated, outpath, outfile):
         break
     # logr.info('\t Columns are {}'.format(columns))
     ct = 0
-    with open(os.path.join(outpath, 'table.csv'), 'w', newline='') as csvfile:
+    with open(os.path.join(outpath, outfile), 'w', newline='') as csvfile:
         writer = csv.writer(csvfile, delimiter=',')
         writer.writerow(columns)
         for k, v in aggregated.items():
