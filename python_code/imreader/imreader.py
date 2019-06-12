@@ -79,7 +79,8 @@ def parse_directory(dirname, featurenames=None):
     :return: dictonary of key --> condition_feature_measure (e.g. Volume_mean, ..)
     '''
     if featurenames is None:
-        featurenames = ['Volume', 'Area', 'BoundingBoxAA_Length', 'Sphericity']
+    #'Intensity_Mean_Ch=2_Img=1'
+        featurenames = ['Volume', 'Area', 'BoundingBoxAA_Length', 'Sphericity', 'Intensity_Mean_Ch=2_Img=1']
     # logr.info('\tSelected Features: {}'.format(featurenames))
     dirtree = tls.treedir(dirname)
     # logr.info('\t Found {} files'.format(len(dirtree.keys())))
